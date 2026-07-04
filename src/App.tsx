@@ -1,8 +1,13 @@
-import './App.css'
+import classNames from 'classnames/bind';
+import styles from './App.module.scss';
+
+const cx = classNames.bind(styles);
 
 function App() {
   return (
-    <div>testing</div>
+    <div className={cx('container')}>
+      testing
+    </div>
   )
 }
 
